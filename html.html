@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram Layout</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Logo</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Explore</a></li>
+				<li><a href="#">Profile</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="posts">
+			<article>
+				<img src="image1.jpg" alt="Post 1">
+				<div class="post-info">
+					<h2>User 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<ul>
+						<li><a href="#">Like</a></li>
+						<li><a href="#">Comment</a></li>
+						<li><a href="#">Share</a></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<img src="image2.jpg" alt="Post 2">
+				<div class="post-info">
+					<h2>User 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<ul>
+						<li><a href="#">Like</a></li>
+						<li><a href="#">Comment</a></li>
+						<li><a href="#">Share</a></li>
+					</ul>
+				</div>
+			</article>
+			<!-- Add more posts here -->
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #f7f7f7;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.posts {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+article {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.post-info {
+	padding: 20px;
+}
+
+.post-info h2 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.post-info p {
+	margin-bottom: 20px;
+}
+
+.post-info ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post-info li {
+	margin-bottom: 10px;
+}
+
+.post-info a {
+	color: #337ab7;
+	text-decoration: none;
+}
+</style>
